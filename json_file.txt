@@ -1,0 +1,6 @@
+﻿{
+    "firstName":"John",
+	"lastName":"Smith",
+    "age":31,
+    "tasks":["Do Dishes", "Do Laundry", "Wash Car", "Buy Groceries"]
+}

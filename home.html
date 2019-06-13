@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Proof of concept - Basic</title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+    <div id="banner">
+        <span id="bannerText">Fluency Examples</span>
+    </div>
+
+    <div class="examples">
+        <h2>Functions and InnerHTML</h2>
+        <button type="button" onclick="dateAndTime()">Click for Date and Time</button>
+        <p id="dateAndTimeP"></p>
+    </div>
+
+    <div id="loopExample" class="examples">
+        <h2>Loops, Conditional Statements, Variables, Parameters and DOM Manipulation</h2>
+        <h3>This section takes an inputted number and creates that many children using a loop. The second button then removes all children.</h3>
+        <input id="loopCount" type="number" />
+        <hr style="height:5pt; visibility:hidden;" />
+        <button type="button" onclick="loop()">Click to count to number above</button>
+        <hr style="height:5pt; visibility:hidden;" />
+        <button type="button" onclick="removeCountChildren()">Click to Erase Count</button>
+        <ul id="loopList" style="list-style:none;">
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="examples">
+        <h2>Javascript Objects</h2>
+        <h3>This section creates a Person object and adds a prototype attribute to the object filled with text from the field below.</h3>
+        <input id="protoAttri" type="text" autocomplete="off" />
+        <hr style="height:5pt; visibility:hidden;" />
+        <button type="button" onclick="createPerson()">Click to create Person with prototype attribute</button>
+        <p id="objectOutput"></p>
+    </div>
+
+    <div class="examples">
+        <h2>JSON, AJAX and Arrays</h2>
+        <h3>This section parses text from an outside file in JSON form then displays an array from that file.</h3>
+        <a href="json_file.txt" target="_blank">json_file.txt</a>
+        <hr style="height:5pt; visibility:hidden;" />
+        <button type="button" onclick="parse()">Click to parse file.</button>
+        <p id="jsonOutput"></p>
+    </div>
+
+    <div class="examples">
+        <h2>Local Storage</h2>
+        <h3>Local Storage may not work on all browsers. If you find that the buttons are not working try a different browser.</h3>
+        <input id="locStorageIn" type="text" autocomplete="off" />
+        <hr style="height:5pt; visibility:hidden;" />
+        <button type="button" onclick="locStorageStore()">Store Text</button>
+        <button type="button" onclick="locStorageRead()">Read Text</button>
+        <p id="locStorageOut"></p>
+    </div>
+
+    <div class="examples">
+        <h2>Audio Tag</h2>
+        <audio controls>
+            <source src="audio_example.mp3" type="audio/mpeg" />
+        </audio>
+    </div>
+
+    <div class="examples">
+        <h2>Canvas</h2>
+        <canvas id="exampleCanvas" width="200" height="200" style="border:3px solid black;"></canvas>
+        <hr style="height:5pt; visibility:hidden;" />
+        <button type="button" onclick="drawOnCanvas()">Click to Draw on Canvas</button>
+    </div>
+
+    <div class="examples">
+        <h2>CSS using Javascript</h2>
+        <hr style="height:5pt; visibility:hidden;" />
+        <button type="button" onclick="decreaseFont()">Click to Decrease Font Size</button>
+        <button type="button" onclick="rotateColor()">Click to Rotate Color</button>
+        <button type="button" onclick="increaseFont()">Click to Increase Font Size</button>
+        <p id="jsCssExample">Change this Text.</p>
+        <p id="colorVar" style="visibility:hidden;">0</p>
+    </div>
+
+    <div class="examples">
+        <h2>CSS Transition</h2>
+        <p id="transition">Hover to transition.</p>
+    </div>
+
+    <div class="examples">
+        <h2>CSS Transform</h2>
+        <hr style="height:10pt; visibility:hidden;" />
+        <p id="transform">This Box was transformed using CSS.</p>
+    </div>
+
+    <div class="examples">
+        <h2>CSS Animate</h2>
+        <hr style="height:5pt; visibility:hidden;" />
+        <button type="button" onclick="startAnimation()">Click to start Animation</button>
+        <p id="animate">This is Animated.</p>
+    </div>
+
+</body>
+</html>

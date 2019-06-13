@@ -1,0 +1,77 @@
+div#banner {
+    background-color: dimgray;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+span#bannerText {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-align:center;
+}
+
+div.examples {
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 60%;
+    padding: 15px;
+    border: 5px solid green;
+}
+
+p#transition {
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    height: 75px;
+    background-color: aquamarine;
+    transition: width 2s, height 1s;
+}
+
+p#transition:hover {
+    width: 80%;
+    height: 150px;
+}
+
+p#transform {
+    text-align: center;
+    margin: auto;
+    width: 25%;
+    height: 75px;
+    background-color: aquamarine;
+    transform: rotate(35deg);
+}
+
+p#animate {
+    position: relative;
+    background-color: aquamarine;
+    width: 75px;
+    height: 75px;
+}
+
+.animateClass {
+    animation: animation 4s linear infinite alternate
+}
+
+@keyframes animation {
+    0% {
+        left: 0px;
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    50% {
+        left: 40%;
+        transform: rotate(180deg);
+    }
+    100% {
+        left: 90%;
+        transform: rotate(360deg);
+    }
+}

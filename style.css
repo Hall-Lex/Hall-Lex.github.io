@@ -75,3 +75,35 @@ p#animate {
         transform: rotate(360deg);
     }
 }
+
+div#eventExample {
+    --eventExampleValue: 1;
+
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: aquamarine;
+    border: 5px solid #111;
+    border-radius: 50%;
+
+    transform: scale(var(--eventExampleValue))
+}
+div#eventExample:hover {
+    background-color: #CCC;
+    cursor: pointer;
+}
+
+.eventExampleShrink {
+    animation: eventShrink .2s linear
+}
+
+@keyframes eventShrink {
+    0% {
+        transform: scale(var(--eventExampleValue))
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}

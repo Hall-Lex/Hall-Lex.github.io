@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
-<body>
+<body onload="onLoadFunc()">
     <div id="banner">
         <span id="bannerText">Fluency Examples</span>
     </div>
@@ -99,6 +99,12 @@
         <hr style="height:5pt; visibility:hidden;" />
         <button type="button" onclick="startAnimation()">Click to start Animation</button>
         <p id="animate">This is Animated.</p>
+    </div>
+
+    <div class="examples">
+        <h2>Javascript Events</h2>
+        <hr style="height:5pt; visibility:hidden;" />
+        <div id="eventExample"></div>
     </div>
 
 </body>

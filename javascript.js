@@ -1,3 +1,24 @@
+function onLoadFunc() {
+    window.timerID;
+    window.counter = 0;
+    window.pressHoldDuration = 50;
+
+    window.eventExample = document.getElementById("eventExample")
+
+    window.pressHoldEvent = new CustomEvent("pressHold");
+
+    window.eventExample.addEventListener("mousedown", pressingDown, false);
+    window.eventExample.addEventListener("mouseup", notPressingDown, false);
+    window.eventExample.addEventListener("mouseleave", notPressingDown, false);
+
+    window.eventExample.addEventListener("touchstart", pressingDown, false);
+    window.eventExample.addEventListener("touchend", notPressingDown, false);
+
+    window.eventExample.addEventListener("pressHold", doSomething, false);
+
+    window.eventExample.addEventListener("animationend", shrinkComplete, false);
+}
+
 function dateAndTime() {
     document.getElementById("dateAndTimeP").innerHTML = Date();
 }
@@ -123,4 +144,39 @@ function decreaseFont() {
 
 function startAnimation() {
     document.getElementById("animate").className = "animateClass";
+}
+
+function pressingDown(e) {
+    requestAnimationFrame(timer);
+    e.preventDefault();
+    window.eventExample.className = "";
+}
+
+function notPressingDown(e) {
+    cancelAnimationFrame(timerID);
+    window.counter = 0;
+    window.eventExample.className = "eventExampleShrink";
+}
+
+function timer() {
+    if (window.counter < window.pressHoldDuration) {
+        window.timerID = requestAnimationFrame(timer);
+        window.counter++;
+        if (window.eventExample.className != "eventExampleShrink") {
+            window.eventExample.style.setProperty("--eventExampleValue", (1 + (window.counter / window.pressHoldDuration)));
+        }
+    }
+    else {
+        window.eventExample.dispatchEvent(window.pressHoldEvent);
+    }
+}
+
+function doSomething(e) {
+    window.eventExample.className = "eventExampleShrink";
+   
+}
+
+function shrinkComplete(e) {
+    console.log("Shrink Complete")
+    window.eventExample.style.setProperty("--eventExampleValue", 1);
 }

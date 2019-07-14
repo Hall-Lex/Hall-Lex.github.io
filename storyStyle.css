@@ -1,0 +1,98 @@
+﻿#storyContainer {
+    width: 350px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    position: relative
+}
+
+button.mainButton {
+    font: 14px "Courier New", Courier, monospace;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+    width: 100px;
+    background-color: #676c58;
+    color: white;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: none;
+    border: hidden;
+}
+
+button.mainTransition {
+    transition: height 1s, width 1s, background-color 1s;
+}
+
+button.mainTransition:hover {
+    width: 60px;
+    background-color: #33362c;
+    position: relative;
+}
+
+button.mainButton:disabled{
+    background-color: lightgray;
+}
+
+#storyText {
+    font: 14px "Courier New", Courier, monospace;
+}
+
+.animateRemove {
+    animation: animateRemove 2s ease-in;
+}
+
+@keyframes animateRemove {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -3000px;
+    }
+}
+
+.animateAdd {
+    animation: animateAdd 2s linear;
+}
+
+@keyframes animateAdd{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#coverImg {
+    position: relative;
+}
+
+button.choiceButton {
+    font: 14px "Courier New", Courier, monospace;
+    width: 100%;
+    background-color: white;
+    color: black;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 2px solid;
+    border-color: #676c58;
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: background-color 1s, color 1s;
+}
+
+button.choiceButton:hover {
+    background-color: #676c58;
+    color: white;
+}
+
+.hidden {
+    display: none;
+
+}

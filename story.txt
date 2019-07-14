@@ -1,0 +1,191 @@
+{
+   "id": 0,
+   "storyLines": [
+      {
+     "id": 1,
+	 "type": "story",
+	 "displayText": "CDC Reports Possible New Plague! The last newspaper heading printed is burned into your mind, not that it makes a difference considering the papers scattered forgotten in the streets. The possible plague quickly became the end of the world. It has been a horrifying 3 months since the first cities started falling, since people started turning into the monsters that now rule the streets. You have survived by what seems like luck, scavenging scraps of food where you can, avoiding The Living and The Dead equally and sleeping in short fragments interspersed with terror.",
+	 "img": "imgs/ImgOne.png",
+     "redirect": -1,
+	 "choiceIDs": [
+	    2
+	    ]
+      },
+      {
+     "id": 2,
+	 "type": "choice",
+	 "displayText": "Continue",
+	 "img": "",
+     "redirect": 3,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+      {
+     "id": 3,
+	 "type": "story",
+	 "displayText": "You now find yourself out on the street looking for a place to hole up for the night that might provide some small modicum of safety. Unfortunately, as you turn the corner you come across a group of The Dead milling about in the street. Dashing back around the corner you look around and weigh your options. What do you decide?",
+     "img": "imgs/ImgTwo.png",
+	 "redirect": -1,
+	 "choiceIDs": [
+	    4,
+		5,
+		6
+	    ]
+      },
+      {
+     "id": 4,
+	 "type": "choice",
+	 "displayText": "There is only a few of them, charge straight at them and overpower them before they know you are there.",
+	 "img": "",
+     "redirect": 7,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 5,
+	 "type": "choice",
+	 "displayText": "You havent survived this long by being reckless, sneak back the way you came and find another way.",
+	 "img": "",
+     "redirect": 8,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 6,
+	 "type": "choice",
+	 "displayText": "They seem to be pre-occupied with, um... ahem eating... sneak past them while they arent looking.",
+	 "img": "",
+     "redirect": 9,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 7,
+	 "type": "story",
+	 "displayText": "Rushing forward you snatch up a nearby hammer you missed on your first inspection. Bashing the zombies brains in you successfully clear the section of street. Looking around in a bit of a panic you realize the absolute luck that was just exhibited in your ill-fated dash. Sighing you take a moment to plan your next move. Looking around you notice a few buildings worth checking out. Which one do you move towards?",
+	 "img": "imgs/ImgThree.png",
+     "redirect": -1,
+	 "choiceIDs": [
+	    10,
+		11,
+		12
+	    ]
+      },
+	  {
+     "id": 8,
+	 "type": "story",
+	 "displayText": "You turn around to back track to safer areas. You make your way back to the house that you slept at the night before. Unfortunately, it has taken you so long that the day is nearly gone. But, hey, at least you are alive. Of course, you also dont have any food. Which leaves you at an uncomfortable crossroad. Do you continue looking tonight or call it a bust and go to sleep?",
+	 "img": "imgs/ImgFive.png",
+     "redirect": -1,
+	 "choiceIDs": [
+	    15,
+		16
+	    ]
+      },
+	  {
+     "id": 9,
+	 "type": "story",
+	 "displayText": "You walk slowly out from behind the minimal safety of the wall you were hiding behind and start out. You make it only a few feet before tripping on a hammer lying nearby sending it scattering across the road making an awful racket. Looking up you notice an uncomfortable number of eyes on you when suddenly you are grabbed from behind. The next few minutes fade in and out until everything finally fades away... forever.",
+	 "img": "imgs/ImgFour.png",
+     "redirect": -1,
+	 "choiceIDs": [
+	    17,
+		18
+	    ]
+      },
+	  {
+     "id": 10,
+	 "type": "choice",
+	 "displayText": "A gun store. Odds are its pretty cleaned out by now, but you never know what they might have missed.",
+	 "img": "",
+     "redirect": 13,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 11,
+	 "type": "choice",
+	 "displayText": "A drug store. Antibiotics, pain pills even bandages that is certainly worth a bit of time.",
+	 "img": "",
+     "redirect": 13,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 12,
+	 "type": "choice",
+	 "displayText": "A small apartment complex. High risk, high reward or so they say.",
+	 "img": "",
+     "redirect": 13,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 13,
+	 "type": "story",
+	 "displayText": "Thank you for playing this short demo.",
+	 "img": "imgs/ImgSix.png",
+     "redirect": -1,
+	 "choiceIDs": [
+	    14
+	    ]
+      },
+	  {
+     "id": 14,
+	 "type": "choice",
+	 "displayText": "Restart",
+	 "img": "",
+     "redirect": -1,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 15,
+	 "type": "choice",
+	 "displayText": "Look for food someplace else despite it growing darker.",
+	 "img": "",
+     "redirect": 13,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 16,
+	 "type": "choice",
+	 "displayText": "Call it a day and go to bed hungry and more than a little cranky.",
+	 "img": "",
+     "redirect": 13,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 17,
+	 "type": "choice",
+	 "displayText": "You have died. Go back and try again.",
+	 "img": "",
+     "redirect": 3,
+	 "choiceIDs": [
+	    -1
+	    ]
+      },
+	  {
+     "id": 18,
+	 "type": "choice",
+	 "displayText": "Restart",
+	 "img": "",
+     "redirect": -1,
+	 "choiceIDs": [
+	    -1
+	    ]
+      }
+   ]
+}

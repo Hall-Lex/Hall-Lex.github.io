@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Choose Your Own Adventure</title>
+    <script src="storyJS.js"></script>
+    <link rel="stylesheet" type="text/css" href="storyStyle.css" />
+</head>
+<body onload="onLoadFunc()">
+    <div id="storyContainer">
+        <!-- image with cover, button to start new, button to load previous -->
+        <img id="coverImg" src="imgs/CoverImg.png" alt="Story Cover" />
+        <button type="button" onclick="animateRemove();setTimeout(startNew, 2000)" class="mainButton mainTransition">New</button>
+        <button type="button" onclick="animateRemove();setTimeout(loadExisting, 2000)" class="mainButton mainTransition">Load</button>
+
+        <!-- Full Game picture, text and buttons -->
+        <button type="button" onclick="saveGame()" id="saveButton" class="mainButton mainTransition hidden" style="position:relative; left:-75px;">Save</button>
+        <button type="button" onclick="audioControl()" id="audioControl" class="mainButton mainTransition" style="position:relative; left:75px;">Pause</button>
+        <p class="currentStoryId hidden"></p>
+        <img id="storyImage" src="" alt="Error" class="hidden" style="position:relative;" />
+        <p id="storyText" class="hidden" style="position:relative;"></p>
+        <button type="button" onclick="removeStory(this.id);setTimeout(addStory, 2000)" class="choiceButton hidden"></button>
+        <br />
+        <button type="button" onclick="removeStory(this.id);setTimeout(addStory, 2000)" class="choiceButton hidden"></button>
+        <br />
+        <button type="button" onclick="removeStory(this.id);setTimeout(addStory, 2000)" class="choiceButton hidden"></button>
+    </div>
+    <iframe src="imgs/Silence.mp3" allow="autoplay" id="autoplayStart" style="display:none"></iframe>
+    <audio id="audio" autoplay loop>
+        <source src="imgs/BackgroundMusic.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
